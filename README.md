@@ -1,5 +1,5 @@
 # python-package-recipe
-Recipe for new Python packages using Pyscaffold
+Recipe for a new Python package using Pyscaffold
 
 Assumptions:
 - using [conda](https://docs.conda.io) for Python environment and package management
@@ -7,22 +7,24 @@ Assumptions:
 - other tools in use: [sphinx](https://www.sphinx-doc.org/), [tox](https://tox.wiki), [pre-commit](https://pre-commit.com)
 
 1. pick a spot for your new package folder and copy `environment.yml` there; modify `environment.yml`
-- change environment name (probably just use the package name)
+- replace new-package-name with an environment name (probably just the package name, perhaps with -dev appended)
 - add any known dependencies
-2. create the conda environment
+
+2. create and activate the conda environment
 
 ```shell
 $ conda env create -f environment.yml
+$ conda activate new-package-name
 ```
 
 3. create the package
 
 ```shell
-$ putup -i new-project-name
+$ putup -i new-package-name
 ```
 
-4. move `environment.yml` into `new-project-name` folder
+4. move `environment.yml` into `new-package-name` folder
 
 ```shell
-$ mv environment.yml new-project-name
+$ mv environment.yml new-package-name
 ```
