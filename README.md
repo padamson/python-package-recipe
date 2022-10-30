@@ -28,3 +28,10 @@ $ putup -i new-package-name
 ```shell
 $ mv environment.yml new-package-name
 ```
+
+5. if using `pre-commit`, update hooks
+
+```shell
+$ cd new-package-name
+$ pre-commmit autoupdate
+```
