@@ -7,31 +7,39 @@ Assumptions:
 - other tools in use: [sphinx](https://www.sphinx-doc.org/), [tox](https://tox.wiki), [pre-commit](https://pre-commit.com)
 
 1. pick a spot for your new package folder and copy `environment.yml` there; modify `environment.yml`
-- replace new-package-name with an environment name (probably just the package name, perhaps with -dev appended)
+- replace new-package with an environment name (probably just the package name, perhaps with -dev appended)
 - add any known dependencies
 
 2. create and activate the conda environment
 
 ```shell
 $ conda env create -f environment.yml
-$ conda activate new-package-name
+$ conda activate new-package
 ```
 
 3. create the package
 
 ```shell
-$ putup -i new-package-name
+$ putup -i new-package
 ```
 
-4. move `environment.yml` into `new-package-name` folder
+4. move `environment.yml` into `new-package` folder
 
 ```shell
-$ mv environment.yml new-package-name
+$ mv environment.yml new-package
 ```
 
 5. if using `pre-commit`, update hooks
 
 ```shell
-$ cd new-package-name
+$ cd new-package
 $ pre-commmit autoupdate
 ```
+
+6. replace content in new-package `README.rst` after the package description with content in `README.rst` from this repo and update it appropriately
+
+7. update CONTRIBUTING.rst
+
+8. copy over and update RELEASE_WORKFLOW.md
+
+9. get to work!

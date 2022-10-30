@@ -1,4 +1,4 @@
-name: new-package-name
+name: new-package
 channels:
   - conda-forge
   - defaults
