@@ -42,5 +42,26 @@ The citation will look something like this:
 Note
 ====
 
-This project has been set up using PyScaffold 4.3.1. For details and usage
-information on PyScaffold see https://pyscaffold.org/.
+This project endeavors to follow `The Turing Way`_ of reproducible research.
+
+.. _The Turing Way: https://the-turing-way.netlify.app/welcome.html
+
+This project has been setup using `PyScaffold`_ 4.3.1. 
+
+.. _PyScaffold: https://pyscaffold.org/
+
+Generation of data documentation in the `data` folder uses `quarto`_.
+
+.. image:: the_turing_way_logo.png
+  :height: 200
+  :alt: The Turing Way Logo
+
+.. image:: pyscaffold_logo.webp
+  :height: 200
+  :alt: Pyscaffold logo
+
+|
+
+.. image:: quarto.png
+  :height: 50
+  :alt: Quarto logo

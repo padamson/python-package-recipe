@@ -23,16 +23,17 @@ $ conda activate new-package
 $ putup -i new-package
 ```
 
-4. move `environment.yml` into `new-package` folder
+4. move `environment.yml` into `new-package` folder and add the package to your conda environment
 
 ```shell
 $ mv environment.yml new-package
+$ cd new-package
+$ pip install -e .
 ```
 
 5. if using `pre-commit`, update hooks
 
 ```shell
-$ cd new-package
 $ pre-commmit autoupdate
 ```
 
@@ -42,4 +43,6 @@ $ pre-commmit autoupdate
 
 8. copy over and update RELEASE_WORKFLOW.md
 
-9. get to work!
+9. copy over the logos included at the end of `README.rst`
+
+10.  get to work!
